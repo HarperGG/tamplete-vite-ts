@@ -411,6 +411,11 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/minimatch@^3.0.3":
+  version "3.0.5"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@types/minimatch/-/minimatch-3.0.5.tgz#1001cc5e6a3704b83c236027e77f2f58ea010f40"
+  integrity sha1-EAHMXmo3BLg8I2An538vWOoBD0A=
+
 "@types/minimist@^1.2.0":
   version "1.2.2"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@types/minimist/-/minimist-1.2.2.tgz#ee771e2ba4b3dc5b372935d549fd9617bf345b8c"
@@ -666,6 +671,14 @@ acorn@^7.1.1:
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha1-/q7SVZc9LndVW4PbwIhRpsY1IPo=
 
+aggregate-error@^3.0.0:
+  version "3.1.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/aggregate-error/-/aggregate-error-3.1.0.tgz#92670ff50f5359bdb7a3e0d40d0ec30c5737687a"
+  integrity sha1-kmcP9Q9TWb23o+DUDQ7DDFc3aHo=
+  dependencies:
+    clean-stack "^2.0.0"
+    indent-string "^4.0.0"
+
 ajv@^6.10.0, ajv@^6.10.2:
   version "6.12.6"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
@@ -686,7 +699,12 @@ ajv@^8.0.1:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-ansi-escapes@^4.2.1:
+ansi-colors@^4.1.1:
+  version "4.1.1"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/ansi-colors/-/ansi-colors-4.1.1.tgz#cbb9ae256bf750af1eab344f229aa27fe94ba348"
+  integrity sha1-y7muJWv3UK8eqzRPIpqif+lLo0g=
+
+ansi-escapes@^4.2.1, ansi-escapes@^4.3.0:
   version "4.3.2"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/ansi-escapes/-/ansi-escapes-4.3.2.tgz#6b2291d1db7d98b6521d5f1efa42d0f3a9feb65e"
   integrity sha1-ayKR0dt9mLZSHV8e+kLQ86n+tl4=
@@ -724,6 +742,11 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
+array-differ@^3.0.0:
+  version "3.0.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/array-differ/-/array-differ-3.0.0.tgz#3cbb3d0f316810eafcc47624734237d6aee4ae6b"
+  integrity sha1-PLs9DzFoEOr8xHYkc0I31q7krms=
+
 array-ify@^1.0.0:
   version "1.0.0"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/array-ify/-/array-ify-1.0.0.tgz#9e528762b4a9066ad163a6962a364418e9626ece"
@@ -738,6 +761,11 @@ arrify@^1.0.1:
   version "1.0.1"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
+
+arrify@^2.0.1:
+  version "2.0.1"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/arrify/-/arrify-2.0.1.tgz#c9655e9331e0abcd588d2a7cad7e9956f66701fa"
+  integrity sha1-yWVekzHgq81YjSp8rX6ZVvZnAfo=
 
 asap@~2.0.3:
   version "2.0.6"
@@ -871,6 +899,14 @@ chalk@^2.0.0, chalk@^2.1.0, chalk@^2.4.2:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
+chalk@^3.0.0:
+  version "3.0.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/chalk/-/chalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
+  integrity sha1-P3PCv1JlkfV0zEksUeJFY0n4ROQ=
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
 chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1:
   version "4.1.2"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
@@ -906,12 +942,30 @@ chardet@^0.7.0:
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha1-kAlISfCTfy7twkJdDSip5fDLrZ4=
 
+ci-info@^3.1.1:
+  version "3.2.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/ci-info/-/ci-info-3.2.0.tgz#2876cb948a498797b5236f0095bc057d0dca38b6"
+  integrity sha1-KHbLlIpJh5e1I28AlbwFfQ3KOLY=
+
+clean-stack@^2.0.0:
+  version "2.2.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/clean-stack/-/clean-stack-2.2.0.tgz#ee8472dbb129e727b31e8a10a427dee9dfe4008b"
+  integrity sha1-7oRy27Ep5yezHooQpCfe6d/kAIs=
+
 cli-cursor@^3.1.0:
   version "3.1.0"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/cli-cursor/-/cli-cursor-3.1.0.tgz#264305a7ae490d1d03bf0c9ba7c925d1753af307"
   integrity sha1-JkMFp65JDR0Dvwybp8kl0XU68wc=
   dependencies:
     restore-cursor "^3.1.0"
+
+cli-truncate@^2.1.0:
+  version "2.1.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/cli-truncate/-/cli-truncate-2.1.0.tgz#c39e28bf05edcde5be3b98992a22deed5a2b93c7"
+  integrity sha1-w54ovwXtzeW+O5iZKiLe7Vork8c=
+  dependencies:
+    slice-ansi "^3.0.0"
+    string-width "^4.2.0"
 
 cli-width@^3.0.0:
   version "3.0.0"
@@ -962,6 +1016,11 @@ colorette@^1.2.1, colorette@^1.2.2:
   version "1.3.0"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/colorette/-/colorette-1.3.0.tgz#ff45d2f0edb244069d3b772adeb04fed38d0a0af"
   integrity sha1-/0XS8O2yRAadO3cq3rBP7TjQoK8=
+
+commander@^7.2.0:
+  version "7.2.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
+  integrity sha1-o2y1fQtQHOEI5NIFWaFQo5HZerc=
 
 compare-func@^2.0.0:
   version "2.0.0"
@@ -1050,7 +1109,7 @@ cross-spawn@^6.0.5:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-cross-spawn@^7.0.3:
+cross-spawn@^7.0.0, cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
   integrity sha1-9zqFudXUHQRVUcF34ogtSshXKKY=
@@ -1210,6 +1269,20 @@ emojis-list@^3.0.0:
   version "3.0.0"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/emojis-list/-/emojis-list-3.0.0.tgz#5570662046ad29e2e916e71aae260abdff4f6a78"
   integrity sha1-VXBmIEatKeLpFucariYKvf9Pang=
+
+end-of-stream@^1.1.0:
+  version "1.4.4"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/end-of-stream/-/end-of-stream-1.4.4.tgz#5ae64a5f45057baf3626ec14da0ca5e4b2431eb0"
+  integrity sha1-WuZKX0UFe682JuwU2gyl5LJDHrA=
+  dependencies:
+    once "^1.4.0"
+
+enquirer@^2.3.6:
+  version "2.3.6"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/enquirer/-/enquirer-2.3.6.tgz#2a7fe5dd634a1e4125a975ec994ff5456dc3734d"
+  integrity sha1-Kn/l3WNKHkElqXXsmU/1RW3Dc00=
+  dependencies:
+    ansi-colors "^4.1.1"
 
 entities@^1.1.1:
   version "1.1.2"
@@ -1396,6 +1469,21 @@ esutils@^2.0.2:
   version "2.0.3"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
   integrity sha1-dNLrTeC42hKTcRkQ1Qd1ubcQ72Q=
+
+execa@^4.0.0:
+  version "4.1.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/execa/-/execa-4.1.0.tgz#4e5491ad1572f2f17a77d388c6c857135b22847a"
+  integrity sha1-TlSRrRVy8vF6d9OIxshXE1sihHo=
+  dependencies:
+    cross-spawn "^7.0.0"
+    get-stream "^5.0.0"
+    human-signals "^1.1.1"
+    is-stream "^2.0.0"
+    merge-stream "^2.0.0"
+    npm-run-path "^4.0.0"
+    onetime "^5.1.0"
+    signal-exit "^3.0.2"
+    strip-final-newline "^2.0.0"
 
 execa@^5.0.0:
   version "5.1.1"
@@ -1602,6 +1690,11 @@ get-intrinsic@^1.0.2:
     has "^1.0.3"
     has-symbols "^1.0.1"
 
+get-own-enumerable-property-symbols@^3.0.0:
+  version "3.0.2"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/get-own-enumerable-property-symbols/-/get-own-enumerable-property-symbols-3.0.2.tgz#b5fde77f22cbe35f390b4e089922c50bce6ef664"
+  integrity sha1-tf3nfyLL4185C04ImSLFC85u9mQ=
+
 get-stdin@^6.0.0:
   version "6.0.0"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/get-stdin/-/get-stdin-6.0.0.tgz#9e09bf712b360ab9225e812048f71fde9c89657b"
@@ -1611,6 +1704,13 @@ get-stdin@^8.0.0:
   version "8.0.0"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/get-stdin/-/get-stdin-8.0.0.tgz#cbad6a73feb75f6eeb22ba9e01f89aa28aa97a53"
   integrity sha1-y61qc/63X27rIrqeAfiaooqpelM=
+
+get-stream@^5.0.0:
+  version "5.2.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/get-stream/-/get-stream-5.2.0.tgz#4966a1795ee5ace65e706c4b7beb71257d6e22d3"
+  integrity sha1-SWaheV7lrOZecGxLe+txJX1uItM=
+  dependencies:
+    pump "^3.0.0"
 
 get-stream@^6.0.0:
   version "6.0.1"
@@ -1789,12 +1889,17 @@ htmlparser2@^6.1.0:
     domutils "^2.5.2"
     entities "^2.0.0"
 
+human-signals@^1.1.1:
+  version "1.1.1"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
+  integrity sha1-xbHNFPUK6uCatsWf5jujOV/k36M=
+
 human-signals@^2.1.0:
   version "2.1.0"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha1-3JH8ukLk0G5Kuu0zs+ejwC9RTqA=
 
-husky@^7.0.1:
+husky@^7.0.0:
   version "7.0.1"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/husky/-/husky-7.0.1.tgz#579f4180b5da4520263e8713cc832942b48e1f1c"
   integrity sha1-V59BgLXaRSAmPocTzIMpQrSOHxw=
@@ -1909,6 +2014,13 @@ is-buffer@^2.0.0:
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/is-buffer/-/is-buffer-2.0.5.tgz#ebc252e400d22ff8d77fa09888821a24a658c191"
   integrity sha1-68JS5ADSL/jXf6CYiIIaJKZYwZE=
 
+is-ci@^3.0.0:
+  version "3.0.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/is-ci/-/is-ci-3.0.0.tgz#c7e7be3c9d8eef7d0fa144390bd1e4b88dc4c994"
+  integrity sha1-x+e+PJ2O730PoUQ5C9HkuI3EyZQ=
+  dependencies:
+    ci-info "^3.1.1"
+
 is-core-module@^2.2.0:
   version "2.5.0"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/is-core-module/-/is-core-module-2.5.0.tgz#f754843617c70bfd29b7bd87327400cda5c18491"
@@ -1961,6 +2073,11 @@ is-number@^7.0.0:
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha1-dTU0W4lnNNX4DE0GxQlVUnoU8Ss=
 
+is-obj@^1.0.1:
+  version "1.0.1"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
+  integrity sha1-PkcprB9f3gJc19g6iW2rn09n2w8=
+
 is-obj@^2.0.0:
   version "2.0.0"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/is-obj/-/is-obj-2.0.0.tgz#473fb05d973705e3fd9620545018ca8e22ef4982"
@@ -1988,6 +2105,11 @@ is-regex@^1.0.3:
   dependencies:
     call-bind "^1.0.2"
     has-tostringtag "^1.0.0"
+
+is-regexp@^1.0.0:
+  version "1.0.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/is-regexp/-/is-regexp-1.0.0.tgz#fd2d883545c46bac5a633e7b9a09e87fa2cb5069"
+  integrity sha1-/S2INUXEa6xaYz57mgnof6LLUGk=
 
 is-regexp@^2.0.0:
   version "2.1.0"
@@ -2133,6 +2255,39 @@ lines-and-columns@^1.1.6:
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
+lint-staged@^11.1.2:
+  version "11.1.2"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/lint-staged/-/lint-staged-11.1.2.tgz#4dd78782ae43ee6ebf2969cad9af67a46b33cd90"
+  integrity sha1-TdeHgq5D7m6/KWnK2a9npGszzZA=
+  dependencies:
+    chalk "^4.1.1"
+    cli-truncate "^2.1.0"
+    commander "^7.2.0"
+    cosmiconfig "^7.0.0"
+    debug "^4.3.1"
+    enquirer "^2.3.6"
+    execa "^5.0.0"
+    listr2 "^3.8.2"
+    log-symbols "^4.1.0"
+    micromatch "^4.0.4"
+    normalize-path "^3.0.0"
+    please-upgrade-node "^3.2.0"
+    string-argv "0.3.1"
+    stringify-object "^3.3.0"
+
+listr2@^3.8.2:
+  version "3.11.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/listr2/-/listr2-3.11.0.tgz#9771b02407875aa78e73d6e0ff6541bbec0aaee9"
+  integrity sha1-l3GwJAeHWqeOc9bg/2VBu+wKruk=
+  dependencies:
+    cli-truncate "^2.1.0"
+    colorette "^1.2.2"
+    log-update "^4.0.0"
+    p-map "^4.0.0"
+    rxjs "^6.6.7"
+    through "^2.3.8"
+    wrap-ansi "^7.0.0"
+
 loader-utils@^1.1.0:
   version "1.4.0"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/loader-utils/-/loader-utils-1.4.0.tgz#c579b5e34cb34b1a74edc6c1fb36bfa371d5a613"
@@ -2183,6 +2338,16 @@ log-symbols@^4.1.0:
   dependencies:
     chalk "^4.1.0"
     is-unicode-supported "^0.1.0"
+
+log-update@^4.0.0:
+  version "4.0.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/log-update/-/log-update-4.0.0.tgz#589ecd352471f2a1c0c570287543a64dfd20e0a1"
+  integrity sha1-WJ7NNSRx8qHAxXAodUOmTf0g4KE=
+  dependencies:
+    ansi-escapes "^4.3.0"
+    cli-cursor "^3.1.0"
+    slice-ansi "^4.0.0"
+    wrap-ansi "^6.2.0"
 
 longest-streak@^2.0.0:
   version "2.0.4"
@@ -2359,10 +2524,26 @@ mkdirp@^0.5.1:
   dependencies:
     minimist "^1.2.5"
 
+mri@^1.1.5:
+  version "1.1.6"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/mri/-/mri-1.1.6.tgz#49952e1044db21dbf90f6cd92bc9c9a777d415a6"
+  integrity sha1-SZUuEETbIdv5D2zZK8nJp3fUFaY=
+
 ms@2.1.2:
   version "2.1.2"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha1-0J0fNXtEP0kzgqjrPM0YOHKuYAk=
+
+multimatch@^4.0.0:
+  version "4.0.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/multimatch/-/multimatch-4.0.0.tgz#8c3c0f6e3e8449ada0af3dd29efb491a375191b3"
+  integrity sha1-jDwPbj6ESa2grz3SnvtJGjdRkbM=
+  dependencies:
+    "@types/minimatch" "^3.0.3"
+    array-differ "^3.0.0"
+    array-union "^2.1.0"
+    arrify "^2.0.1"
+    minimatch "^3.0.4"
 
 mute-stream@0.0.8:
   version "0.0.8"
@@ -2409,6 +2590,11 @@ normalize-package-data@^3.0.0:
     semver "^7.3.4"
     validate-npm-package-license "^3.0.1"
 
+normalize-path@^3.0.0:
+  version "3.0.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
+  integrity sha1-Dc1p/yOhybEf0JeDFmRKA4ghamU=
+
 normalize-range@^0.1.2:
   version "0.1.2"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
@@ -2419,7 +2605,7 @@ normalize-selector@^0.2.0:
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/normalize-selector/-/normalize-selector-0.2.0.tgz#d0b145eb691189c63a78d201dc4fdb1293ef0c03"
   integrity sha1-0LFF62kRicY6eNIB3E/bEpPvDAM=
 
-npm-run-path@^4.0.1:
+npm-run-path@^4.0.0, npm-run-path@^4.0.1:
   version "4.0.1"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/npm-run-path/-/npm-run-path-4.0.1.tgz#b7ecd1e5ed53da8e37a55e1c2269e0b97ed748ea"
   integrity sha1-t+zR5e1T2o43pV4cImnguX7XSOo=
@@ -2436,7 +2622,7 @@ object-assign@^4.1.1:
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
-once@^1.3.0:
+once@^1.3.0, once@^1.3.1, once@^1.4.0:
   version "1.4.0"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
   integrity sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
@@ -2494,6 +2680,13 @@ p-locate@^5.0.0:
   integrity sha1-g8gxXGeFAF470CGDlBHJ4RDm2DQ=
   dependencies:
     p-limit "^3.0.2"
+
+p-map@^4.0.0:
+  version "4.0.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/p-map/-/p-map-4.0.0.tgz#bb2f95a5eda2ec168ec9274e06a747c3e2904d2b"
+  integrity sha1-uy+Vpe2i7BaOySdOBqdHw+KQTSs=
+  dependencies:
+    aggregate-error "^3.0.0"
 
 p-try@^2.0.0:
   version "2.2.0"
@@ -2563,6 +2756,13 @@ picomatch@^2.2.3:
   version "2.3.0"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
   integrity sha1-8fBh3o9qS/AiiS4tEoI0+5gwKXI=
+
+please-upgrade-node@^3.2.0:
+  version "3.2.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/please-upgrade-node/-/please-upgrade-node-3.2.0.tgz#aeddd3f994c933e4ad98b99d9a556efa0e2fe942"
+  integrity sha1-rt3T+ZTJM+StmLmdmlVu+g4v6UI=
+  dependencies:
+    semver-compare "^1.0.0"
 
 postcss-html@^0.36.0:
   version "0.36.0"
@@ -2713,6 +2913,18 @@ prettier@^1.19.1:
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
   integrity sha1-99f1/4qc2HKnvkyhQglZVqYHl8s=
 
+pretty-quick@^3.1.1:
+  version "3.1.1"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/pretty-quick/-/pretty-quick-3.1.1.tgz#93ca4e2dd38cc4e970e3f54a0ead317a25454688"
+  integrity sha1-k8pOLdOMxOlw4/VKDq0xeiVFRog=
+  dependencies:
+    chalk "^3.0.0"
+    execa "^4.0.0"
+    find-up "^4.1.0"
+    ignore "^5.1.4"
+    mri "^1.1.5"
+    multimatch "^4.0.0"
+
 progress@^2.0.0:
   version "2.0.3"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
@@ -2827,6 +3039,14 @@ pug@^3.0.2:
     pug-parser "^6.0.0"
     pug-runtime "^3.0.1"
     pug-strip-comments "^2.0.0"
+
+pump@^3.0.0:
+  version "3.0.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/pump/-/pump-3.0.0.tgz#b4a2116815bde2f4e1ea602354e8c75565107a64"
+  integrity sha1-tKIRaBW94vTh6mAjVOjHVWUQemQ=
+  dependencies:
+    end-of-stream "^1.1.0"
+    once "^1.3.1"
 
 punycode@^2.1.0:
   version "2.1.1"
@@ -3008,7 +3228,7 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-rxjs@^6.6.0:
+rxjs@^6.6.0, rxjs@^6.6.7:
   version "6.6.7"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
   integrity sha1-kKwBisq/SRv2UEQjXVhjxNq4BMk=
@@ -3029,6 +3249,11 @@ safe-buffer@~5.2.0:
   version "2.1.2"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
+
+semver-compare@^1.0.0:
+  version "1.0.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/semver-compare/-/semver-compare-1.0.0.tgz#0dee216a1c941ab37e9efb1788f6afc5ff5537fc"
+  integrity sha1-De4hahyUGrN+nvsXiPavxf9VN/w=
 
 "semver@2 || 3 || 4 || 5", semver@^5.5.0:
   version "5.7.1"
@@ -3089,6 +3314,15 @@ slice-ansi@^2.1.0:
     ansi-styles "^3.2.0"
     astral-regex "^1.0.0"
     is-fullwidth-code-point "^2.0.0"
+
+slice-ansi@^3.0.0:
+  version "3.0.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/slice-ansi/-/slice-ansi-3.0.0.tgz#31ddc10930a1b7e0b67b08c96c2f49b77a789787"
+  integrity sha1-Md3BCTCht+C2ewjJbC9Jt3p4l4c=
+  dependencies:
+    ansi-styles "^4.0.0"
+    astral-regex "^2.0.0"
+    is-fullwidth-code-point "^3.0.0"
 
 slice-ansi@^4.0.0:
   version "4.0.0"
@@ -3162,6 +3396,11 @@ sprintf-js@~1.0.2:
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
+string-argv@0.3.1:
+  version "0.3.1"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/string-argv/-/string-argv-0.3.1.tgz#95e2fbec0427ae19184935f816d74aaa4c5c19da"
+  integrity sha1-leL77AQnrhkYSTX4FtdKqkxcGdo=
+
 string-hash@^1.1.1:
   version "1.1.3"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/string-hash/-/string-hash-1.1.3.tgz#e8aafc0ac1855b4666929ed7dd1275df5d6c811b"
@@ -3191,6 +3430,15 @@ string_decoder@^1.1.1:
   integrity sha1-QvEUWUpGzxqOMLCoT1bHjD7awh4=
   dependencies:
     safe-buffer "~5.2.0"
+
+stringify-object@^3.3.0:
+  version "3.3.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/stringify-object/-/stringify-object-3.3.0.tgz#703065aefca19300d3ce88af4f5b3956d7556629"
+  integrity sha1-cDBlrvyhkwDTzoivT1s5VtdVZik=
+  dependencies:
+    get-own-enumerable-property-symbols "^3.0.0"
+    is-obj "^1.0.1"
+    is-regexp "^1.0.0"
 
 strip-ansi@^5.1.0, strip-ansi@^5.2.0:
   version "5.2.0"
@@ -3399,7 +3647,7 @@ through2@^4.0.0:
   dependencies:
     readable-stream "3"
 
-"through@>=2.2.7 <3", through@^2.3.6:
+"through@>=2.2.7 <3", through@^2.3.6, through@^2.3.8:
   version "2.3.8"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
@@ -3794,6 +4042,15 @@ word-wrap@~1.2.3:
   version "1.2.3"
   resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
   integrity sha1-YQY29rH3A4kb00dxzLF/uTtHB5w=
+
+wrap-ansi@^6.2.0:
+  version "6.2.0"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/wrap-ansi/-/wrap-ansi-6.2.0.tgz#e9393ba07102e6c91a3b221478f0257cd2856e53"
+  integrity sha1-6Tk7oHEC5skaOyIUePAlfNKFblM=
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
 
 wrap-ansi@^7.0.0:
   version "7.0.0"
