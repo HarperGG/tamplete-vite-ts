@@ -1,4 +1,7 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+// Register windi
+import "virtual:windi.css"
 
-createApp(App).mount('#app')
+import { createApp } from "vue"
+import App from "./App.vue"
+
+createApp(App).mount("#app")
