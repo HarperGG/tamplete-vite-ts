@@ -717,6 +717,11 @@
     "@vue/compiler-dom" "3.2.2"
     "@vue/shared" "3.2.2"
 
+"@vue/devtools-api@^6.0.0-beta.14":
+  version "6.0.0-beta.15"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/@vue/devtools-api/-/devtools-api-6.0.0-beta.15.tgz#ad7cb384e062f165bcf9c83732125bffbc2ad83d"
+  integrity sha1-rXyzhOBi8WW8+cg3MhJb/7wq2D0=
+
 "@vue/eslint-config-prettier@^6.0.0":
   version "6.0.0"
   resolved "https://registry.nlark.com/@vue/eslint-config-prettier/download/@vue/eslint-config-prettier-6.0.0.tgz#ad5912b308f4ae468458e02a2b05db0b9d246700"
@@ -4318,6 +4323,13 @@ vue-eslint-parser@^7.0.0, vue-eslint-parser@^7.10.0:
     lodash "^4.17.21"
     semver "^6.3.0"
 
+vue-router@^4.0.10:
+  version "4.0.11"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/vue-router/-/vue-router-4.0.11.tgz#cd649a0941c635281763a20965b599643ddc68ed"
+  integrity sha1-zWSaCUHGNSgXY6IJZbWZZD3caO0=
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.14"
+
 vue-tsc@^0.2.2:
   version "0.2.2"
   resolved "https://registry.nlark.com/vue-tsc/download/vue-tsc-0.2.2.tgz#e7fd5e5c789beb31840ad26082cfc8bb6356e733"
@@ -4325,9 +4337,9 @@ vue-tsc@^0.2.2:
   dependencies:
     vscode-vue-languageservice "^0.26.6"
 
-vue@^3.0.5:
+vue@^3.2.0:
   version "3.2.2"
-  resolved "https://registry.nlark.com/vue/download/vue-3.2.2.tgz#11715cb71a02baefd0f6e6552dc623680eb1bf32"
+  resolved "https://artifactory.tusimple.ai:443/artifactory/api/npm/npm-infra-common/vue/-/vue-3.2.2.tgz#11715cb71a02baefd0f6e6552dc623680eb1bf32"
   integrity sha1-EXFctxoCuu/Q9uZVLcYjaA6xvzI=
   dependencies:
     "@vue/compiler-dom" "3.2.2"
